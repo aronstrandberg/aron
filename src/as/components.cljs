@@ -1,4 +1,7 @@
-(ns as.components)
+(ns as.components
+  (:require
+    [reagent.core :as r]
+    [cljss.reagent :refer-macros [defstyled]]))
 
 (defn portrait []
   [:img {:src "/images/me.jpg"}])
