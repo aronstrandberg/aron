@@ -10,7 +10,8 @@
                  [org.roman01la/cljss "1.6.3"]]
 
   :plugins [[lein-cljsbuild "1.1.5"]
-            [lein-figwheel "0.5.16"]]
+            [lein-figwheel "0.5.16"]
+            [lein-cljfmt "0.8.0"]]
 
   :clean-targets ^{:protect false}
   [:target-path
