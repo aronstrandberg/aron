@@ -53,39 +53,7 @@
    :justify-content "center"
    :text-align "center"})
 
-(defn header []
-  [intro
-   [heading "Aron Strandberg"]])
-
-(defn about []
-  [section
-   [heading "About me"]
-   [text "I'm a software developer from Stockholm, Sweden. I'm currently pursuing a Master's degree in computer science at the Royal Institute of Technology. Besides programming, I'm interested in fashion, photography, and bartending."]])
-
-(defn work []
-  [section
-   [heading "Work"]
-   [text "Currently, I'm working with digital health care at " [:a {:href "http://kry.se"} "KRY"] ". Previously, I've worked with financial APIs at " [:a {:href "http://www.trioptima.com"} "TriOptima"] ", and university recruitment solutions at " [:a {:href "http://sqore.com"} "Sqore"] ". Besides software development, I've also worked as a bartender, art director, and team leader at DKM, and as a photographer at " [:a {:href "http://osqledaren.se"} "Osqledaren"] "."]])
-
-(defn studs []
-  [section
-   [heading "Projects — Studs"]
-   [text "I served as Art Director for the student project " [:a {:href "http://studieresan.se"} "Studs"] " in 2018. As part of the project's design team, I helped develop the graphical profile, designed print work, and designed and developed a React frontend for " [:a {:href "http://studieresan.se"} "studieresan.se"] "."]])
-
-(defn izumi []
-  [section
-   [heading "Projects — Izumi"]
-   [text [:a {:href "http://izumi.netlify.com"} "Izumi"] " is a Tabata timer. Unable to find a decent Tabata timer for HIIT training, I set out to create my own. Izumi is built using React and Redux."]])
-
 (defn footer []
-  [section
-   [f {:dangerouslySetInnerHTML {:__html "&times;"}}]])
+      [section
+       [f {:dangerouslySetInnerHTML {:__html "&times;"}}]])
 
-(defn home-page []
-  [container
-   [header]
-   [about]
-   [work]
-   [studs]
-   [izumi]
-   [footer]])
