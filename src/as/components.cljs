@@ -3,8 +3,14 @@
    [reagent.core :as r]
    [cljss.reagent :refer-macros [defstyled]]))
 
-(def text-color "#f8f9f8")
-(def background "#f92b28")
+;; (def text-color "#f8f9f8")
+(def background "#fdf8f4")
+
+;; (def background "#f92b28")
+
+(def text-color "#fd4656")
+
+(def link-color text-color)
 
 (defstyled container :div
   {:width "100%"
@@ -38,6 +44,11 @@
    :color text-color
    :text-align "left"
    :margin 0})
+
+(defstyled link :a
+ {:color link-color
+  :border-bottom (str "1px solid" link-color)
+  :&:hover {:border-color link-color}})
 
 (defstyled intro :div
   {:height "20vh"

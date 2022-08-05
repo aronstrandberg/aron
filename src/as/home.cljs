@@ -1,5 +1,5 @@
 (ns as.home
-  (:require [as.components :refer [container intro heading section text footer]]))
+  (:require [as.components :refer [container intro heading section text link footer]]))
 
 (defn header []
       [intro
@@ -15,22 +15,22 @@
        [heading "About me"]
        [text about-text]])
 
-(def work-text
-  (str "Currently, I'm working with digital health care at " [:a {:href "http://kry.se"} "Kry"] ".
-  Previously, I've worked with financial APIs at " [:a {:href "http://www.trioptima.com"} "TriOptima"] ",
-  and university recruitment solutions at " [:a {:href "http://sqore.com"} "Sqore"] ".
-  Besides software development, I've also worked as a bartender, art director, and team leader at DKM,
-  and as a photographer at " [:a {:href "http://osqledaren.se"} "Osqledaren"] "."))
+(def work-text)
+
 
 (defn work []
       [section
        [heading "Work"]
-       [text work-text]])
+       [text   "Currently, I'm working with digital health care at " [link {:href "http://kry.se"} "Kry"] ".
+  Previously, I've worked with financial APIs at " [link {:href "http://www.trioptima.com"} "TriOptima"] ",
+  and university recruitment solutions at " [link {:href "http://sqore.com"} "Sqore"] ".
+  Besides software development, I've also worked as a bartender, art director, and team leader at DKM,
+  and as a photographer at " [link {:href "http://osqledaren.se"} "Osqledaren"] "."]])
 
 (def studs-text
-  (str "I served as Art Director for the student project " [:a {:href "http://studieresan.se"} "Studs"] " in 2018.
+  (str "I served as Art Director for the student project " [link {:href "http://studieresan.se"} "Studs"] " in 2018.
   As part of the project's design team, I helped develop the graphical profile, designed print work,
-  and designed and developed a React frontend for " [:a {:href "http://studieresan.se"} "studieresan.se"] "."))
+  and designed and developed a React frontend for " [link {:href "http://studieresan.se"} "studieresan.se"] "."))
 
 (defn studs []
       [section
@@ -38,7 +38,7 @@
        [text studs-text]])
 
 (def izumi-text
-  (str [:a {:href "http://izumi.netlify.com"} "Izumi"] " is a Tabata timer.
+  (str [link {:href "http://izumi.netlify.com"} "Izumi"] " is a Tabata timer.
   Unable to find a decent Tabata timer for HIIT training, I set out to create my own.
   Izumi is built using React and Redux."))
 
