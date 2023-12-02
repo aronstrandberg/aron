@@ -3,8 +3,8 @@
    [reagent.core :as r]
    [cljss.reagent :refer-macros [defstyled]]))
 
-(def text-color "#f8f9f8")
-(def background "#f92b28")
+(def background "#fd4656")
+(def text-color "#fdf8f4")
 
 (defstyled container :div
   {:width "100%"
