@@ -69,7 +69,7 @@
    [heading "Work"]
    [text
      "Currently, I help make the insurance industry open and transparent, at " [link "insurely.com" "Insurely"] ".
-     Previously, I worked with digital health care at " [link "kry.se" "Kry"] ",
+     Previously, I've helped make cognitive behavioural therapy a digital thing at " [link "kry.se" "Kry"] ",
      with financial APIs at " [link "trioptima.com" "TriOptima"] ",
      and with university recruitment solutions at " [link "sqore.com" "Sqore"] ".
      Besides software development, I've also worked as a bartender, art director, and team leader at DKM,
