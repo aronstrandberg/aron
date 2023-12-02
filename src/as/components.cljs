@@ -78,12 +78,12 @@
 (defn studs []
   [section
    [heading "Projects — Studs"]
-   [text "I served as Art Director for the student project " [:a {:href "http://studieresan.se"} "Studs"] " in 2018. As part of the project's design team, I helped develop the graphical profile, designed print work, and designed and developed a React frontend for " [:a {:href "http://studieresan.se"} "studieresan.se"] "."]])
+   [text "I served as Art Director for the student project " [link "studieresan.se" "Studs"] " in 2018. As part of the project's design team, I helped develop the graphical profile, designed print work, and designed and developed a React frontend for " [link "studieresan.se" "studieresan.se"] "."]])
 
 (defn izumi []
   [section
    [heading "Projects — Izumi"]
-   [text [:a {:href "http://izumi.netlify.com"} "Izumi"] " is a Tabata timer. Unable to find a decent Tabata timer for HIIT training, I set out to create my own. Izumi is built using React and Redux."]])
+   [text [link "izumi.netlify.com" "Izumi"] " is a Tabata timer. Unable to find a decent Tabata timer for HIIT training, I set out to create my own. Izumi is built using React and Redux."]])
 
 (defn footer []
   [section
