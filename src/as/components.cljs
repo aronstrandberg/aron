@@ -62,7 +62,7 @@
    [heading "About me"]
    [text "I'm a software developer from Stockholm, Sweden. I'm currently pursuing a Master's degree in computer science at the Royal Institute of Technology. Besides programming, I'm interested in fashion, photography, and bartending."]])
 
-(defn link [href title] [:a {:href href} title])
+(defn link [href title] [:a {:href (str "http://" href)} title])
 
 (defn work []
   [section
@@ -73,7 +73,7 @@
      with financial APIs at " [link "trioptima.com" "TriOptima"] ",
      and with university recruitment solutions at " [link "sqore.com" "Sqore"] ".
      Besides software development, I've also worked as a bartender, art director, and team leader at DKM,
-     and as a photographer at " [link "http://osqledaren.se" "Osqledaren"] "."]])
+     and as a photographer at " [link "osqledaren.se" "Osqledaren"] "."]])
 
 (defn studs []
   [section
