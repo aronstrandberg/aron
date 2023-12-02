@@ -39,6 +39,15 @@
    :text-align "left"
    :margin 0})
 
+(def link-color text-color)
+
+(defstyled anchor :a
+ {:color link-color
+  :border-bottom (str "1px solid" link-color)
+  :text-decoration "none"
+  :&:hover {:border-bottom (str "2px solid" link-color)}
+  :&:visited {:color link-color}})
+
 (defstyled intro :div
   {:height "20vh"
    :display "flex"
@@ -62,7 +71,7 @@
    [heading "About me"]
    [text "I'm a software developer from Stockholm, Sweden. I'm currently pursuing a Master's degree in computer science at the Royal Institute of Technology. Besides programming, I'm interested in fashion, photography, and bartending."]])
 
-(defn link [href title] [:a {:href (str "http://" href)} title])
+(defn link [href title] [anchor {:href (str "http://" href)} title])
 
 (defn work []
   [section

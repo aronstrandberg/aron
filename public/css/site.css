@@ -14,13 +14,3 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-a, a:visited {
-  text-decoration: none;
-  color: #000;
-  border-bottom: 2px solid transparent;
-}
-
-a:hover {
-  border-bottom: 2px solid;
-}
