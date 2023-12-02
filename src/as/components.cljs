@@ -67,7 +67,11 @@
 (defn work []
   [section
    [heading "Work"]
-   [text "Currently, I'm working with digital health care at " [link "kry.se" "Kry"] ". Previously, I've worked with financial APIs at " [link "trioptima.com" "TriOptima"] ", and university recruitment solutions at " [link "sqore.com" "Sqore"] ". Besides software development, I've also worked as a bartender, art director, and team leader at DKM, and as a photographer at " [link "http://osqledaren.se" "Osqledaren"] "."]])
+   [text "Currently, I'm working with digital health care at " [link "kry.se" "Kry"] ".
+     Previously, I've worked with financial APIs at " [link "trioptima.com" "TriOptima"] ",
+     and university recruitment solutions at " [link "sqore.com" "Sqore"] ".
+     Besides software development, I've also worked as a bartender, art director, and team leader at DKM,
+     and as a photographer at " [link "http://osqledaren.se" "Osqledaren"] "."]])
 
 (defn studs []
   [section
